@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student/teacher infor </title>
+</head>
+<body>
+    <div class="options"> 
+        <div class="option"> 
+            <label for="subject">Subject:</label> 
+            <select id="subject" name="subject"> 
+                <option value="">Select Subject</option> 
+                <optgroup label="Semester 1"> 
+                    <option value="math101">Mathematics I</option> 
+                    <option value="phys101">Physics I</option> 
+                    <option value="chem101">Chemistry I</option> 
+                    <option value="cs101">Introduction to Computer Science</option> 
+                </optgroup> <optgroup label="Semester 2"> 
+                    <option value="math102">Mathematics II</option> 
+                    <option value="phys102">Physics II</option> 
+                    <option value="chem102">Chemistry II</option> 
+                    <option value="cs102">Mechanics</option> 
+                </optgroup> <optgroup label="Semester 3"> 
+                    <option value="math201">Mathematics III</option> 
+                    <option value="phys201">DMS</option> 
+                    <option value="chem201">DC</option> 
+                    <option value="cs201">Object-Oriented Programming java </option> 
+                </optgroup> 
+                <optgroup label="Semester 4"> 
+                    <option value="math202">DSA</option> 
+                    <option value="phys202">Software Engineering</option> 
+                    <option value="chem202">TOC</option> 
+                    <option value="cs202">Database Systems</option> 
+                </optgroup> 
+            </optgroup> 
+            <optgroup label="Semester 5"> 
+                <option value="math202">POC</option> 
+                <option value="phys202">CyberSecurity</option> 
+                <option value="chem202">OS</option> 
+                <option value="cs202">Database Systems</option> 
+            </optgroup>
+            <optgroup label="Semester 6"> 
+                <option value="math202">ML</option> 
+                <option value="phys202">Web Technology </option> 
+                <option value="chem202">OE-2</option> 
+                <option value="cs202">CyberSecurity</option> 
+            </optgroup> 
+            </select> 
+        </div> 
+    </div>
+    <div class="file-uploads">
+        <div class="file-upload">
+            <label for="teacher-file">Upload for Teacher:</label>
+            <input type="file" id="teacher-file" name="teacher-file">
+        </div>
+        
+        <div class="file-upload">
+            <label for="student-file">Upload for Student:</label>
+            <input type="file" id="student-file" name="student-file">
+        </div>
+    </div>
+      
+    <button class="submit-btn">Submit</button>
+</body>
+</html>
