@@ -1,66 +1,93 @@
-.container {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 20px;
-    }
-    .options {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    }
-    .option {
+  }
+  
+  .option {
     flex-basis: 45%;
-    }
-    .option label {
+  }
+  
+  .option label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    }
-    .option select {
+  }
+  
+  .option select {
     width: 100%;
     padding: 8px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    }
-    .file-uploads {
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .file-uploads {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    }
-    .file-upload {
+  }
+  
+  .file-upload {
     flex-basis: 45%;
-    }
-    .file-upload label {
+  }
+  
+  .file-upload label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    }
-    .file-upload input[type="file"] {
+  }
+  
+  .file-upload input[type="file"] {
     width: 100%;
     padding: 8px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    }
-    .submit-btn {
+    background-color: #f9f9f9;
+  }
+  
+  .submit-btn {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
+    font-size: 16px;
     background-color: #050505;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    }
-    .submit-btn:hover {
+  }
+  
+  .submit-btn:hover {
     background-color: #121212;
-    }
-    /* Style the select element */
-.select-wrapper {
+  }
+  
+  /* Style the select element */
+  .select-wrapper {
     position: relative;
     display: inline-block;
-    }
+    width: 100%;
+  }
   
-    .select-wrapper select {
+  .select-wrapper select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -71,30 +98,30 @@
     border-radius: 4px;
     background-color: #f9f9f9;
     cursor: pointer;
-    }
+  }
   
-    .select-wrapper select:focus {
+  .select-wrapper select:focus {
     outline: none;
     border-color: #0d0d0d;
-    }
+  }
   
   /* Style the options */
-    .select-wrapper select option {
+  .select-wrapper select option {
     padding: 8px;
-    }
+  }
   
   /* Style the dropdown arrow */
-    .select-wrapper::after {
+  .select-wrapper::after {
     content: '\25BC';
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
     pointer-events: none;
-    }
+  }
   
   /* Style the dropdown when open */
-    .select-wrapper select:active,
-    .select-wrapper select:focus {
+  .select-wrapper select:active,
+  .select-wrapper select:focus {
     border-color: #090a0a;
-    }
+  }
