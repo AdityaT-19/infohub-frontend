@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <div id="userType">
+        <input
+          type="radio"
+          id="teacher"
+          name="userType"
+          onclick="showTeacherForm()"
+        />
+        <label for="teacher">Teacher</label>
+        <input
+          type="radio"
+          id="student"
+          name="userType"
+          onclick="showStudentForm()"
+        />
+        <label for="student">Student</label>
+        <input
+          type="radio"
+          id="admin"
+          name="userType"
+          onclick="showAdminForm()"
+        />
+        <label for="admin">Admin</label>
+        <input
+          type="radio"
+          id="club"
+          name="userType"
+          onclick="showClubForm()"
+        />
+        <label for="club">Club</label>
+      </div>
+      <!-- Teacher Login Form -->
+      <form id="teacherForm" style="display: none">
+        <div class="form-group">
+          <label for="teach<erLoginEmail">Email</label>
+          <input
+            type="email"
+            id="teacherLoginEmail"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="teacherLoginPassword">Password</label>
+          <input
+            type="password"
+            id="teacherLoginPassword"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button class="btn">Login as Teacher</button>
+      </form>
+      <!-- Student Login Form -->
+      <form id="studentForm" style="display: none">
+        <div class="form-group">
+          <label for="studentLoginEmail">Email</label>
+          <input
+            type="email"
+            id="studentLoginEmail"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="studentLoginPassword">Password</label>
+          <input
+            type="password"
+            id="studentLoginPassword"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button class="btn">Login as Student</button>
+      </form>
+      <!-- Admin Login Form -->
+      <form id="adminForm" style="display: none">
+        <div class="form-group">
+          <label for="adminLoginEmail">Email</label>
+          <input
+            type="email"
+            id="adminLoginEmail"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="adminLoginPassword">Password</label>
+          <input
+            type="password"
+            id="adminLoginPassword"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button class="btn">Login as Admin</button>
+      </form>
+      <!-- Club Login Form -->
+      <form id="clubForm" style="display: none">
+        <div class="form-group">
+          <label for="clubLoginEmail">Email</label>
+          <input
+            type="email"
+            id="clubLoginEmail"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="clubLoginPassword">Password</label>
+          <input
+            type="password"
+            id="clubLoginPassword"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button class="btn">Login as Club</button>
+      </form>
+      <div class="signup-link">
+        <p>
+          Not signed up yet? <a href="/auth/signup/index.html">Signup here</a>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

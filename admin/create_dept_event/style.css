@@ -1,0 +1,58 @@
+/* CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #101011; /* Blue color for heading */
+}
+
+.event-info {
+  margin-top: 20px;
+}
+
+.event-info p {
+  margin: 10px 0;
+}
+
+.event-info label {
+  font-weight: bold; /* Make labels bold */
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="datetime-local"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #111212;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0b0c0c; /* Darker shade of blue on hover */
+}

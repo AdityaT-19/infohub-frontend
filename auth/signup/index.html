@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup and Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Signup</h2>
+    <div class="toggle-group">
+      <input type="radio" id="teacher" name="userType" value="teacher" onclick="showTeacherForm('teacher')" checked>
+      <label for="teacher">Teacher</label>
+      
+      <input type="radio" id="student" name="userType" value="student" onclick="showStudentForm('student')">
+      <label for="student">Student</label>
+      
+      <input type="radio" id="admin" name="userType" value="admin" onclick="showAdminForm('admin')">
+      <label for="admin">Admin</label>
+      
+      <input type="radio" id="club" name="userType" value="club" onclick="showClubForm('club')">
+      <label for="club">Club</label>
+    </div>
+    
+    <!-- Signup Forms -->
+    <form id="teacherForm" style="display:none;">
+      <div class="form-group">
+        <label for="teacherID">Enter ID</label>
+        <input type="text" id="teacherID" placeholder="Enter your ID">
+      </div>
+      <div class="form-group">
+        <label for="teacherName">Name</label>
+        <input type="text" id="teacherName" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="teacherEmail">Email</label>
+        <input type="email" id="teacherEmail" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="teacherPassword">Password</label>
+        <input type="text" id="teacherPassword" placeholder="Enter your password">
+      </div>
+      <div class="form-group">
+        <label for="teacherImage">Upload Image</label>
+        <input type="file" id="teacherImage">
+      </div>
+      <button class="btn">Signup as Teacher</button>
+    </form>
+    <form id="studentForm" style="display:none;">
+      <div class="form-group">
+        <label for="studentName">Name</label>
+        <input type="text" id="studentName" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="studentEmail">Email</label>
+        <input type="email" id="studentEmail" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="studentUSN">USN</label>
+        <input type="text" id="studentUSN" placeholder="Enter your USN">
+      </div>
+      <div class="form-group">
+        <label for="studentBranch">Branch</label>
+        <input type="text" id="studentBranch" placeholder="Enter your branch">
+      </div>
+      <div class="form-group">
+        <label for="studentSemester">Semester</label>
+        <input type="text" id="studentSemester" placeholder="Enter your semester">
+      </div>
+      <div class="form-group">
+        <label for="studentPhoneNumber">Phone Number</label>
+        <input type="number" id="studentPhoneNumber" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label for="studentImage">Upload Image</label>
+        <input type="file" id="studentImage">
+      </div>
+      <button class="btn">Signup as Student</button>
+    </form>
+    <form id="adminForm" style="display:none;">
+      <div class="form-group">
+        <label for="adminID">Enter ID</label>
+        <input type="text" id="adminID" placeholder="Enter your ID">
+      </div>
+      <div class="form-group">
+        <label for="adminName">Name</label>
+        <input type="text" id="adminName" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="adminEmail">Email</label>
+        <input type="email" id="adminEmail" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="adminPassword">Password</label>
+        <input type="text" id="adminPassword" placeholder="Enter your password">
+      </div>
+      <button class="btn">Signup as Admin</button>
+    </form>
+    <form id="clubForm" style="display:none;">
+      <div class="form-group">
+        <label for="clubID">Enter ID</label>
+        <input type="text" id="clubID" placeholder="Enter your ID">
+      </div>
+      <div class="form-group">
+        <label for="clubName">Name</label>
+        <input type="text" id="clubName" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="clubEmail">Email</label>
+        <input type="email" id="clubEmail" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="clubPassword">Password</label>
+        <input type="number" id="clubPassword" placeholder="Enter your password">
+      </div>
+      <div class="form-group">
+        <label for="clubPhoneNumber">Phone Number</label>
+        <input type="number" id="clubPhoneNumber" placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label for="clubImage">Upload Image</label>
+        <input type="file" id="clubImage">
+      </div>
+      <button class="btn">Signup as Club</button>
+    </form>
+    <div class="login-link">
+      <p>Already have an account? <a href="/auth/login/index.html">Login</a></p>
+    </div>
+  <script  src="script.js">
+  </script>
+</body>
+</html>

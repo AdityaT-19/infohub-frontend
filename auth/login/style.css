@@ -1,0 +1,99 @@
+body {
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://t3.ftcdn.net/jpg/07/33/64/04/360_F_733640495_CzK3HMdjSStUetHvjydilz0IfAXB4n0W.jpg"); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+}
+
+/* Your existing CSS styles */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Your existing CSS styles */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures the padding and border are included in the width */
+  margin-top: 5px; /* Adds some spacing between label and input */
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #040404;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #030303;
+}
+
+#userType {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#userType input[type="radio"] {
+  display: none;
+}
+
+#userType label {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+#userType input[type="radio"]:checked + label {
+  background-color: #060606;
+  color: #fff;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #0b0b0b;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

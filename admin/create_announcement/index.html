@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Announcement</title>
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar navigation -->
+    <nav class="sidebar">
+      <h2>Main Menu</h2>
+      <input type="text" id="search-bar" placeholder="Search..." />
+      <a href="index.html">Home</a>
+      <a href="resource_material.html">Resource Materials</a>
+      <a href="profile.html">Profile</a>
+      <a href="announcement.html">Announcements</a>
+      <a href="club.html">Club Events</a>
+      <a href="department_events.html">Department Events</a>
+    </nav>
+    <div class="container">
+      <h1>Announcement Page</h1>
+      <div id="announcementList">
+        <!-- Announcements will be dynamically added here -->
+      </div>
+      <button onclick="showAnnouncementForm()">Add Announcement</button>
+      <div id="announcementForm" style="display: none">
+        <h2>Add New Announcement</h2>
+        <input type="text" id="dept" placeholder="Department" />
+        <select id="priority">
+          <option value="LOW">Low</option>
+          <option value="MEDIUM">Medium</option>
+          <option value="HIGH">High</option>
+        </select>
+        <input type="text" id="title" placeholder="Title" />
+        <textarea id="description" placeholder="Description"></textarea>
+        <input type="file" id="file" />
+        <button onclick="addAnnouncement()">Submit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

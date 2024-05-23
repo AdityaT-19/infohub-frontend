@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club Create Event</title>
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <h2>Main Menu</h2>
+      <input type="text" id="search-bar" placeholder="Search..." />
+      <a href="index.html">Home</a>
+      <a href="resource_material.html">Resource Materials</a>
+      <a href="profile.html">Profile</a>
+      <a href="announcement.html">Announcements</a>
+      <a href="club.html">Club Events</a>
+      <a href="department_events.html">Department Events</a>
+    </nav>
+    <header>
+      <h1>Club Events</h1>
+    </header>
+    <main>
+      <section id="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <div id="events-container">
+          <!-- Events will be dynamically added here -->
+        </div>
+      </section>
+
+      <section id="create-event">
+        <h2>Create New Event</h2>
+        <form id="event-form">
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="venue">Venue:</label>
+            <input type="text" id="venue" name="venue" required />
+          </div>
+          <div class="form-group">
+            <label for="dateTime">Date & Time:</label>
+            <input
+              type="datetime-local"
+              id="dateTime"
+              name="dateTime"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="image">Upload Image:</label>
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <button type="submit">Create Event</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Club Events</p>
+    </footer>
+  </body>
+</html>
