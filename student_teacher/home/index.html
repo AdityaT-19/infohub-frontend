@@ -4,15 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome, Student/Teacher</h1>
-    <p>This is the home page of the student/teacher dashboard.</p>
-    <p>Here, you can access various resources and functionalities.</p>
-    <p>Feel free to navigate through the sidebar menu.</p>
+    <div class="container">
+        <div class="buttons"> 
+          <label class="btn">
+            <input type="radio" name="content-type" value="all" checked>
+            All
+          </label>
+          <label class="btn">
+            <input type="radio" name="content-type" value="announcement">
+            Announcement
+          </label>
+          <label class="btn">
+            <input type="radio" name="content-type" value="event">
+            Events
+          </label>
+        </div>
+    <div class="content-container">
+      <div class="announcement-container">
+        <div class="announcement-card">
+          <img src="announcement1.jpg" alt="Announcement 1">
+          <h3>Announcement 1</h3>
+          <p>Priority: High</p>
+          <p>Description: This is the first announcement.</p>
+        </div>
+        
+        <div class="announcement-card">
+          <img src="announcement2.jpg" alt="Announcement 2">
+          <h3>Announcement 2</h3>
+          <p>Priority: Medium</p>
+          <p>Description: This is the second announcement.</p>
+        </div>
+        
+        <div class="announcement-card">
+          <img src="announcement3.jpg" alt="Announcement 3">
+          <h3>Announcement 3</h3>
+          <p>Priority: Low</p>
+          <p>Description: This is the third announcement.</p>
+        </div>
+    </div>
+      
+        <div class="event-container">
+            <div class="event-card">
+                <img src="event1.jpg" alt="Event 1">
+                <h3>Event 1</h3>
+                <p>Date: May 15, 2024</p>
+                <p>Description: This is the first event.</p>
+                <p>Club/Department: Club A</p>
+                <p>Venue: Venue A</p>
+                <p>Time: 10:00 AM</p>
+            </div>
+        
+            <div class="event-card">
+                <!-- Add details for Event 2 -->
+            </div>
+        
+            <div class="event-card">
+                <!-- Add details for Event 3 -->
+            </div>
+        </div>
+    </div>
   </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
-
