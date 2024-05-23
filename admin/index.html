@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Sidebar</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="sidebar">
-    <h2>Admin Menu</h2>
-    <ul>
-      <li><a href="create_announcement/index.html" target="main">Create Announcement</a></li>
-      <li><a href="create_dept_event/index.html" target="main">Create Department</a></li>
-    </ul>
-  </div>
+  <frameset cols="20%,80%">
+    <frame src="admin/index.html" name="main"></frame>
+    <frame src="nav/index.html" name="navbar"></frame>
+    <noframes>
+      <body>
+        <p>Your browser does not support frames.</p>
+      </body>
+    </noframes>
+  </frameset>
 </body>
 </html>
