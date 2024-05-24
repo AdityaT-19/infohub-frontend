@@ -1,5 +1,11 @@
 /* Your CSS styles for the sidebar */
-
+.body{
+  background-image: url("https://imgs.search.brave.com/UJA5qsCjXKHQZ6E9w8pEvocEUGFJU6Td-o6cH-Lr548/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9w/YWludGVkLWdyZXkt/YmFja2dyb3VuZC13/aXRoLW1ldGFsLXRl/eHR1cmVfMTI1NTQw/LTc3OS5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw"); /* Ensure the path is correct */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Ensures the background stays fixed on scroll */
+}
 .sidebar {
     height: 100%;
     width: 20%;
