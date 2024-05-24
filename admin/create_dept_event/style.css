@@ -3,7 +3,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url("https://imgs.search.brave.com/VDsYW7EG04wuJtYiRNzT_i3vbf8fnKc7WSCo92mOy5E/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzExLzM2LzQx/LzM2MF9GXzYxMTM2/NDE1Ml81amlJT21M/WDZpVXNKN3Boam9P/Nk9WUVJpdFI3NnRm/Ty5qcGc");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .container {
   max-width: 800px;

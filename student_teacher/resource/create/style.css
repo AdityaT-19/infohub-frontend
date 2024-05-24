@@ -4,6 +4,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://imgs.search.brave.com/2hQDTt4nDQRdWC_nzIAUoqiaNwlkWtBRzAg3lKphI80/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NjUzMDE2NjAzMDYt/MjllMDg3NTFjYzUz/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4bGVI/QnNiM0psTFdabFpX/UjhPWHg4ZkdWdWZE/QjhmSHg4ZkE9PQ.jpeg"); /* Ensure this path is correct */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Ensures the background stays fixed on scroll */
 }
 /* Main content styles */
 .content {

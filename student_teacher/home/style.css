@@ -1,19 +1,19 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  .content-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(".https://imgs.search.brave.com/pQ9wWvGvc-n3kPZjblEKMzM18vRCx_mZp_GtzKOoRVY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9n/cmV5LXRleHR1cmVk/LWJhY2tncm91bmRf/MjQ5NzItNzYzLmpw/Zz9zaXplPTYyNiZl/eHQ9anBn"); /* Ensure this path is correct */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Ensures the background stays fixed on scroll */
+}
   
   .container {
     max-width: 1200px;

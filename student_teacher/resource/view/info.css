@@ -1,7 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://imgs.search.brave.com/s7madVRDp4qM4eUvNSsQTOZGDZrd6QbOXCAI0v8zJog/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9kYXJrLWdyYXkt/Y2xvc2V1cC1jb25j/cmV0ZS1iYWNrZ3Jv/dW5kLWRhcmstZ3Jh/eS1jb25jcmV0ZS10/ZXh0dXJlLWJhY2tn/cm91bmQtZ2VuZXJh/dGl2ZS1haV8yNzIy/MjItNjIyLmpwZz9z/aXplPTYyNiZleHQ9/anBn"); /* Ensure the path is correct */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Ensures the background stays fixed on scroll */
+}
   
   .container {
     max-width: 800px;

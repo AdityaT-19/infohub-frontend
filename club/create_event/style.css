@@ -7,7 +7,10 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f4f4f4;
+  background-image: url("https://imgs.search.brave.com/O9IuMKLJEWpi4aPb_zTJWiRjBtjLA47e-oDXy_6wYRs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/MTUzMzk3NjAxMDct/MTk1MmI3YTA4NDU0/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4Tm54OGJH/bG5hSFFsTWpCamIy/eHZkWEo4Wlc1OE1I/eDhNSHg4ZkRBPQ.jpeg"); /* Correct path to the image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 header {
